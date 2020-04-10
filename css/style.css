@@ -1,0 +1,305 @@
+/* Copyright (C) 2020 JAC Production - All Rights Reserved
+ * Data Importer
+ * with Chart Report
+ * Developed By: Jason A. Catadman
+ */
+
+@font-face {
+	font-family: Microsoft Yi Baiti;
+	src: url('../fonts/msyi.ttf');
+}
+
+@font-face {
+	font-family: Lato;
+	src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src: url('../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+	font-family: Raleway-Regular;
+	src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: Raleway-Medium;
+	src: url('../fonts/Raleway-Medium.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: table;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+    background-color: #323a45;
+    color: #ffffff;
+	padding: 10px;
+	font-size: 16px;
+}
+
+td {
+	font-size: 16px;
+	border-bottom: 1px solid #eaeaea;
+	color: #323a45;
+}
+
+table, th, td {
+    border: 1px solid #323a45;
+	border-collapse: collapse;
+	font-family: Microsoft Yi Baiti;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #fff;
+  
+}
+table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+/* buttons */
+input.button {
+	width: 100%;
+	font-family: 'Lato';
+	display: inline-block;
+	border-radius: 6px;    
+	color: #f4f7fc;
+	text-align: center;
+	padding: 16px 0px 16px 0px;
+	text-decoration: none;
+	background: #15bdc8;
+	font-size: 15px;
+	margin: 0px 0px 10px 0px;
+}
+
+input.button:hover {
+	background: #1ad9e6;
+	color: #ffffff;
+}
+
+.menuitem a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#import {
+	width: 50%;
+	float: right;
+}
+
+#file-btn-con {
+	padding-top: 20px;
+	width: 50%;
+	float: left;
+}
+
+/* header */
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	height: 56px;
+	background: #021319;
+	box-shadow: 0px 0px 8px #888888;
+	display: table;
+	z-index: 1;
+}
+
+#header > h2 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	color: #ffffff;
+	font: 1.3em arial;
+	padding-left: 10px;
+}
+
+#header-menu {
+	float: right;
+	display: block;
+	padding-top: 16px;
+	padding-right: 20px;
+}
+
+.menuitem {
+	display: inline;
+	font-size: 12px;
+	font-family: 'Lato';
+	text-transform: uppercase;
+	margin-right: 10px;
+	color: #ffffff;
+}
+
+.box-header {
+    padding: 12px;
+    border-bottom: 1px solid #d9d9d9;
+    display: block;
+    position: relative;
+    margin-top: 70px;
+}
+.header-title {
+    font-size: 26px;
+    color: #1f2636;
+    display: inline-block;
+    font-weight: bold;
+	font-family: Raleway-Medium;
+}
+.header-content {
+	width: 100%;
+    display: inline-block;
+}
+
+div.left-column {
+	width: 48.5%;
+	height: auto;
+	float: left;
+}
+
+div.right-column {
+	width: 48.5%;
+	height: auto;
+	float: left;
+}
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.center-table {
+	overflow: hidden;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 32px;
+	overflow: scroll;
+}
+
+#content div {
+	text-align: justify;
+}
+
+#footer {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 32px;
+	position: fixed;
+	bottom: 0px;
+}
+#footer > p {
+	margin: 8px;
+	color: #ffffff;
+	font: 12px arial;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*LOG IN*/
+.box {
+	width: 30%;
+	height: auto;
+	background: white;
+	display: inline-block;
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
+				0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	position: relative;
+	border-radius: 6px;
+}
+
+.form-group {
+	margin-bottom: 8px;
+}
+
+input[type = text], input[type = password], input[type = number], input[type = date] {
+	border: 1px solid #e8e8e8;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 2px;
+	font-size: 20px;
+	font-family: 'Microsoft Yi Baiti';
+	float: left;
+	font-size: 18px;
+}
+
+#adminlogin-btn {
+	width: 100%;
+}
+
+#logo-image {
+	width: 110px;
+	height: auto;
+	padding: 15px;
+	float: left;
+}
+
+input.textinput {
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	background: #f2f2f2;
+	background-image: none;
+	border-radius: 2px;
+	font-family: 'Arial';
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	width: 96.5%;
+}
+
+@media only screen and (max-width: 900px) {
+	div.left-column {
+		width: 98%;
+		margin-bottom: 20px;
+	}
+	div.right-column {
+		width: 98%;
+		padding-bottom: 10px;
+	}
+	#import {
+		width: 100%;
+	}
+	#file-btn-con {
+		padding-top: 0px;
+		padding-bottom: 20px;
+		width: 90%;
+		float: left;
+	}
+	.box {
+		width: 60%;
+	}
+}
